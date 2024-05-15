@@ -1,0 +1,37 @@
+<main>
+  @for ( elemento of todosLosDatos; track elemento.id) {
+  <!-- <div
+    class=" grid gap-0 row-gap-3 text-center column-gap-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded border border-black"
+    style="width: 18rem;">
+    <figure>
+      <img class="" style="width: 16rem; height: 22rem;" src={{elemento.image}} alt="foto de {{elemento.name}}" />
+    </figure>
+    <figcaption>
+      <h2>Name: {{elemento.name}}</h2>
+      <p>
+        Gender: {{elemento.gender}} <br>
+
+        Voice Actor: {{elemento.voicedBy}}
+      </p>
+    </figcaption>
+  </div> -->
+
+  <div
+    class="card gap-0 row-gap-3 text-center column-gap-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded border border-black"
+    style="width: 18rem;">
+    <img src={{elemento.image}} class="card-img-top" alt="foto de {{elemento.name}}">
+    <div class="card-body">
+      <h2 class="card-title">Name: {{elemento.name}}</h2>
+      <p class="card-text"></p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Gender: {{elemento.gender}}</li>
+      <li class="list-group-item">Occupation: {{elemento.occupation}}</li>
+      <li class="list-group-item">Voice Actor: {{elemento.voicedBy}}</li>
+    </ul>
+  </div>
+
+  }
+</main>
+
+<!-- <router-outlet /> -->
